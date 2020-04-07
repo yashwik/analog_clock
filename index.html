@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>ANALOGUE CLOCK - exp 6</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./clock.css">
+  <link rel="stylesheet" type="text/css" href="datetime.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+		
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+        
+  <link rel="icon" type="image/png" href="Images/time.png">
+  <link rel="apple-touch-icon" href="Images/180px.png">
+  <link rel="apple-touch-icon" href="Images/167px.png">
+  <link rel="apple-touch-icon" href="Images/152px.png">
+  <link rel="apple-touch-icon" href="Images/120px.png">
+</head>
+<body>
+<svg class="clock" viewBox="0 0 100 100">
+        <defs>
+            <clipPath id="myCircle">
+            <circle cx="50" cy="50" r="49" />
+            </clipPath>
+        </defs>
+        <image width="100" height="100" align="middle" opacity="1" xlink:href="earth1.jpeg" clip-path="url(#myCircle)" />
+        <g class="lines">
+            <line class="line line-1" x1="50" y1="5" x2="50" y2="10"></line>
+            <line class="line line-2" x1="50" y1="5" x2="50" y2="10"></line>
+            <line class="line line-3" x1="50" y1="5" x2="50" y2="10"></line>
+            <line class="line line-4" x1="50" y1="5" x2="50" y2="10"></line>
+            <line class="line line-5" x1="50" y1="5" x2="50" y2="10"></line>
+            <line class="line line-6" x1="50" y1="5" x2="50" y2="10"></line>
+            <line class="line line-7" x1="50" y1="5" x2="50" y2="10"></line>
+            <line class="line line-8" x1="50" y1="5" x2="50" y2="10"></line>
+            <line class="line line-9" x1="50" y1="5" x2="50" y2="10"></line>
+            <line class="line line-10" x1="50" y1="5" x2="50" y2="10"></line>
+            <line class="line line-11" x1="50" y1="5" x2="50" y2="10"></line>
+            <line class="line line-12" x1="50" y1="5" x2="50" y2="10"></line>
+        </g>
+
+        <line class="line line-hour" x1="50" y1="25" x2="50" y2="50"></line>
+        <line class="line line-minute" x1="50" y1="10" x2="50" y2="50"></line>
+        <circle cx="50" cy="50" r="3"></circle>
+
+        <g class="line line-second">
+            <line x1="50" y1="10" x2="50" y2="60"></line>
+            <circle cx="50" cy="50" r="1.5"></circle>
+        </g>
+  </svg>
+  <div id="time"></div>
+  <div id="today"></div>
+  <script  src="clock.js"></script>
+  <script src="datetime.js"></script>
+</body>
+</html>
